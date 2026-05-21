@@ -1,0 +1,75 @@
+:root {
+  --fundo-principal: #0A0E14;
+  --fundo-secundario: #141826;
+  --roxo-neon: #7C3AED;
+  --rosa-neon: #FF2D72;
+  --ciano-neon: #00E5FF;
+  --verde-acento: #A3FF12;
+  --texto-principal: #E6F1FF;
+  --texto-secundario: #8B92A6;
+  --borda-card: #2A2F45;
+  --sombra-neon: rgba(0, 229, 255, 0.35);
+  --fontFamily:"Cascadia Code",sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body {
+    background-color: var(--fundo-principal);
+    color: var(--texto-principal);
+    font-family: var(--fontFamily);
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background: var(--fundo-principal);
+    padding: 0 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 2px 15px var(--ciano-neon);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#logo {
+    width: 95px;
+    height: 70px;
+    object-fit: contain;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--ciano-neon);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: var(--rosa-neon);
+    text-shadow: 0 0 10px var(--rosa-neon);
+}
+.cor{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:var(--rosa-neon);
+}
