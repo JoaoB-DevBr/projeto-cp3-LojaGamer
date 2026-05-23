@@ -313,3 +313,19 @@ header nav ul li a.ativo {
         0 0 18px var(--ciano-neon),
         0 0 35px rgba(0, 229, 255, 0.6);
 }
+footer {
+    width: 100%;
+    max-width: 900px;
+    margin: auto auto 0;
+    padding: 25px 20px;
+    background: transparent;
+    border-top: 1px solid rgba(0, 229, 255, 0.35);
+    text-align: center;
+}
+
+footer p {
+    color: var(--texto-secundario);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
