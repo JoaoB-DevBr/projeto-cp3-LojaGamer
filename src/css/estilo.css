@@ -17,7 +17,10 @@
     box-sizing:border-box;
 }
 body {
-    background-color: var(--fundo-principal);
+    background: 
+    radial-gradient(circle at top left, rgba(255, 45, 114, 0.18), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(0, 229, 255, 0.16), transparent 35%),
+    var(--fundo-principal);
     color: var(--texto-principal);
     font-family: var(--fontFamily);
 }
@@ -47,12 +50,10 @@ body {
     text-transform: uppercase;
     letter-spacing: 8px;
     line-height: 1.05;
-
     background: linear-gradient(90deg, var(--texto-principal), var(--ciano-neon));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-
     animation: aparecer 1s ease-in-out;
 }
 
@@ -61,7 +62,6 @@ body {
     color: var(--rosa-neon);
     background: none;
     -webkit-text-fill-color: var(--rosa-neon);
-
     text-shadow:
         0 0 10px var(--rosa-neon),
         0 0 25px rgba(255, 45, 114, 0.8),
@@ -238,4 +238,163 @@ header nav ul li a.ativo::after {
 header nav ul li a.ativo {
     color: var(--ciano-neon);
     text-shadow: 0 0 12px var(--ciano-neon);
+}
+#tituloh3 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.05;
+    background: linear-gradient(90deg, var(--texto-principal), var(--ciano-neon));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: aparecer 1s ease-in-out;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#tituloh3 span{
+    display: block;
+    color: var(--rosa-neon);
+    background: none;
+    -webkit-text-fill-color: var(--rosa-neon);
+    text-shadow:
+        0 0 10px var(--rosa-neon),
+        0 0 25px rgba(255, 45, 114, 0.8),
+        0 0 45px rgba(255, 45, 114, 0.5);
+}
+#container {
+    padding: 60px 8%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    justify-content: center;
+}
+
+
+.produto-card {
+    background: rgba(20, 24, 38, 0.85);
+    border: 1px solid var(--borda-card);
+    border-radius: 18px;
+    padding: 18px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow:
+        0 0 18px rgba(0, 229, 255, 0.08),
+        inset 0 0 18px rgba(255, 45, 114, 0.04);
+
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.produto-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--ciano-neon);
+
+    box-shadow:
+        0 0 18px rgba(0, 229, 255, 0.45),
+        0 0 35px rgba(255, 45, 114, 0.18),
+        inset 0 0 20px rgba(0, 229, 255, 0.08);
+}
+
+.produto-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: auto;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 229, 255, 0.25);
+
+    transition: 0.3s ease;
+}
+
+
+.produto-card:hover img {
+    transform: scale(1.04);
+    filter: brightness(1.1);
+}
+
+.card-content {
+    padding: 22px 0 0;
+    color: var(--texto-principal);
+}
+
+
+.card-content h3 {
+    min-height: 75px;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--texto-principal);
+}
+
+
+.preco-antigo {
+    font-size: 0.9rem;
+    color: var(--texto-secundario);
+    margin-bottom: 8px;
+    font-family: var(--fontFamily);
+}
+
+.preco-antigo span {
+    padding: 5px;
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    text-decoration-color: var(--rosa-neon);
+
+    color: var(--texto-secundario);
+}
+
+
+.preco {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--ciano-neon);
+    margin: 15px 0;
+
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
+}
+
+.preco span {
+    padding: 5px;
+    font-size: 0.9rem;
+    color: var(--texto-secundario);
+}
+
+.btn-comprar {
+    background: transparent;
+    color: var(--ciano-neon);
+    border: 2px solid var(--ciano-neon);
+    padding: 13px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--fontFamily);
+    box-shadow:
+        0 0 12px rgba(0, 229, 255, 0.35),
+        inset 0 0 12px rgba(0, 229, 255, 0.12);
+    transition: 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background: var(--ciano-neon);
+    color: var(--fundo-principal);
+    transform: scale(1.05);
+    box-shadow:
+        0 0 18px var(--ciano-neon),
+        0 0 35px rgba(0, 229, 255, 0.6);
 }

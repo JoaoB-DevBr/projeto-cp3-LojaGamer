@@ -19,7 +19,10 @@
 }
 
 body {
-    background-color: var(--fundo-principal);
+    background: 
+    radial-gradient(circle at top left, rgba(255, 45, 114, 0.18), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(0, 229, 255, 0.16), transparent 35%),
+    var(--fundo-principal);
     color: var(--texto-principal);
     font-family: var(--fontFamily);
 }

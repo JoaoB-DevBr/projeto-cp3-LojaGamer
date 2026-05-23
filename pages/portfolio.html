@@ -1,29 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexora | Portfólio</title>
+
     <!-- CSS EXTERNO -->
-     <link rel="stylesheet" href="../src/css/portfolio.css">
+    <link rel="stylesheet" href="../src/css/portfolio.css">
 </head>
 <body>
     <header>
-        <a href="./index.html" class="logo">
-            <img src="../src/assets/logoSnome.png" alt="Logo Nexora" id="logo"></img>
+        <a href="../index.html" class="logo">
+            <img src="../src/assets/logoSnome.png" alt="Logo Nexora" id="logo">
         </a>
-        
+
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="./portfolio.html">Portfólio</a></li>
+                <li><a href="./portfolio.html" class="ativo">Portfólio</a></li>
                 <li><a href="./contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-    
+
+    <h3 id="tituloh3">
+        Todos os
+        <span>Produtos</span>
+    </h3>
+
+    <div id="container">
+        <section class="card">
+
+            <div class="produto-card">
+                <img src="../src/assets/headset.png" alt="Headset Gamer HyperX Cloud Stinger 2 Core PS5">
+
+                <article class="card-content">
+                    <h3>Headset Gamer HyperX Cloud Stinger 2 Core PS5 - para PlayStation</h3>  
+                    <p class="preco-antigo">De:<span>R$ 239,90</span></p>
+                    <p class="preco"><span>Por:</span> R$ 198,94</p>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+            </div>
+
+            <div class="produto-card">
+                <img src="../src/assets/mouse.png" alt="Mouse Gamer Sem Fio Logitech G PRO X SUPERLIGHT">
+
+                <article class="card-content">
+                    <h3>Mouse Gamer Sem Fio Logitech G PRO X SUPERLIGHT com Tecnologia LIGHTSPEED</h3>
+                    <p class="preco-antigo">De:<span>R$ 899,90</span></p>
+                    <p class="preco"><span>Por:</span> R$ 619,00</p>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+            </div>
+
+            <div class="produto-card">
+                <img src="../src/assets/controle.png" alt="Controle Joystick Sem Fio Branco">
+
+                <article class="card-content">
+                    <h3>Controle Joystick Sem Fio Compatível Com Pc Android Ios Nintendo Cor Branco</h3>
+                    <p class="preco-antigo">De:<span>R$ 139,00</span></p>
+                    <p class="preco"><span>Por:</span> R$ 96,00</p>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+            </div>
+
+            <div class="produto-card">
+                <img src="../src/assets/jogoWukong.png" alt="Jogo Black Myth Wukong PS5">
+
+                <article class="card-content">
+                    <h3>Jogo Black Myth Wukong PS5 Mídia Física</h3>
+                    <p class="preco-antigo">De:<span>R$ 468,22</span></p>
+                    <p class="preco"><span>Por:</span> R$ 351,16</p>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+            </div>
+
+            <div class="produto-card">
+                <img src="../src/assets/jogoPokemon.png" alt="jogoPokemon">
+
+                <article class="card-content">
+                    <h3>Jogo Pokémon Legends Z-A, Nintendo Switch 2</h3> 
+                    <p class="preco">R$ 382,99</p>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+            </div>
+
+            <div class="produto-card">
+                <img src="../src/assets/teclado.png" alt="teclado">
+
+                <article class="card-content">
+                    <h3>Teclado Mecânico Gamer Machenike K500-B61, Switch Huano Brown</h3>
+                    <p class="preco">R$ 134,99</p>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+            </div>
+
+            <div class="produto-card">
+                <img src="../src/assets/mouse2.png" alt="mouse2">
+
+                <article class="card-content">
+                    <h3>Mouse Gamer Logitech G403 HERO com RGB LIGHTSYNC, 6 Botões Programáveis, Ajuste de Peso</h3>
+                    <p class="preco">R$ 179,99</p>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+            </div>
+
+            <div class="produto-card">
+                <img src="../src/assets/mousepad.png" alt="mousepad">
+
+                <article class="card-content">
+                    <h3>ELG Mousepad Gamer Merak Speed Tamanho Grande 45x40cm</h3>
+                    <p class="preco">R$ 45,90</p>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+            </div>
+
+        </section>
+    </div>
+
     <!-- JS EXTERNO -->
-     <script src="../src/js/script.js"></script>
+    <script src="../src/js/script.js"></script>
 </body>
 </html>
