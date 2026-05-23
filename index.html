@@ -9,27 +9,41 @@
 </head>
 <body>
     <header>
-        <a href="./index.html" class="logo">
-            <img src="./src/assets/logo.png" alt="Logo Nexora" id="logo"></img>
-        </a>
+        <div class="logo-area">
+            <img src="./src/assets/logoSnome.png" alt="Logo Nexora" id="logo">
+    
+        </div>
             
         <nav>
             <ul>
-                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html" class="ativo">Home</a></li>
                 <li><a href="./pages/sobre.html">Sobre</a></li>
                 <li><a href="./pages/portfolio.html">Portfólio</a></li>
                 <li><a href="./pages/contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-       
 
-    <main>
-        <p id="texto">Produtos <span>Imperdíveis</span></p>
+    <main id="inicio">
+        <section class="hero-texto">
+            <h2 id="titulo">
+                Produtos
+                <span>Imperdíveis</span>
+            </h2>
+
+            <p id="frase">
+                Monte seu setup gamer com periféricos, acessórios e equipamentos de alta performance.
+            </p>
+
+            <a href="./pages/portfolio.html" class="btn-primary">Ver produtos</a>
+        </section>
+
+        <section class="hero-imagem">
+            <img src="./src/assets/logo.png" alt="Logo Nexora" id="imgHero">
+        </section>
     </main>
 
-    
-    <!-- JS EXTERNO -->
-     <script src="./src/js/script.js"></script>
+    <script src="./src/js/script.js"></script>
 </body>
+
 </html>
