@@ -34,8 +34,21 @@ a {
 ul {
     list-style: none;
 }
-
-/* HEADER PADRÃO */
+.menu-hamburguer{
+    display:none;
+    flex-direction:column;
+    justify-content: space-around;
+    width:30px;
+    height:25px;
+    cursor:pointer;
+    z-index:1000;
+}
+.menu-hamburguer span{
+    width:100%;
+    height:3px;
+    background:var(--texto-principal);
+    border-radius:10px;
+}
 
 header {
     width: 100%;
@@ -84,13 +97,11 @@ header nav ul {
 
 header nav ul li a {
     position: relative;
-
     color: var(--texto-principal);
     font-size: 0.8rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 4px;
-
     transition: 0.3s;
 }
 
@@ -104,13 +115,10 @@ header nav ul li a::after {
     position: absolute;
     left: 0;
     bottom: -12px;
-
     width: 0%;
     height: 3px;
-
     background: var(--ciano-neon);
     box-shadow: 0 0 10px var(--ciano-neon);
-
     transition: 0.3s;
 }
 
@@ -124,27 +132,20 @@ header nav ul li a.ativo {
     text-shadow: 0 0 12px var(--ciano-neon);
 }
 
-/* BOTÃO PADRÃO */
-
 .btn-primary {
     display: inline-block;
     padding: 16px 38px;
-
     background: transparent;
     color: var(--ciano-neon);
-
     border: 2px solid var(--ciano-neon);
     border-radius: 6px;
-
     text-transform: uppercase;
     font-size: 0.85rem;
     font-weight: 800;
     letter-spacing: 3px;
-
     box-shadow:
         0 0 12px rgba(0, 229, 255, 0.5),
         inset 0 0 12px rgba(0, 229, 255, 0.15);
-
     transition: 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -153,9 +154,7 @@ header nav ul li a.ativo {
 .btn-primary:hover {
     background: var(--ciano-neon);
     color: var(--fundo-principal);
-
     transform: translateY(-4px);
-
     box-shadow:
         0 0 20px var(--ciano-neon),
         0 0 45px rgba(0, 229, 255, 0.7);
@@ -215,13 +214,10 @@ header nav ul li a.ativo {
 .contato-card textarea {
     width: 100%;
     padding: 14px 16px;
-
     background: var(--fundo-principal);
     color: var(--texto-principal);
-
     border: 1px solid rgba(0, 229, 255, 0.35);
     border-radius: 8px;
-
     font-family: var(--fontFamily);
     outline: none;
 }
@@ -271,4 +267,74 @@ footer p {
     font-size: 0.85rem;
     line-height: 1.6;
     letter-spacing: 1px;
+}
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 0 25px;
+        position: relative;
+    }
+
+    #logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .menu-hamburguer {
+        display: flex;
+        position: relative;
+        z-index: 1002;
+    }
+
+    nav {
+        display: none !important;
+        position: absolute;
+        top: 85px;
+        left: 0;
+
+        width: 100%;
+        padding: 25px;
+
+        background: var(--fundo-principal);
+        border-bottom: 1px solid rgba(0, 229, 255, 0.4);
+        box-shadow: 0 8px 20px rgba(0, 229, 255, 0.25);
+
+        z-index: 1001;
+    }
+
+    nav.active {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    nav ul li a {
+        font-size: 0.85rem;
+        letter-spacing: 3px;
+    }
+
+    .menu-hamburguer.open span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+        background: var(--rosa-neon);
+        box-shadow: 0 0 10px var(--rosa-neon);
+    }
+
+    .menu-hamburguer.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-hamburguer.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+        background: var(--rosa-neon);
+        box-shadow: 0 0 10px var(--rosa-neon);
+    }
 }
