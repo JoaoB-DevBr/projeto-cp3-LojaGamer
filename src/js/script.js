@@ -8,7 +8,7 @@ window.onload = function(){
             content.classList.remove("hidden")
             content.classList.add("hidden")
         },1000)
-    },3000)
+    },1700)
 }
 
 // MENU HAMBURGUER
